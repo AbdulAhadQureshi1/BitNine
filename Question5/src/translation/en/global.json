@@ -1,8 +1,6 @@
 {
 	"header": {
-		"message": "Hello this is header"
-	},
-	"home": {
-		"body": "Hello World this is Home."
+		"advert_heading": "AG Cloud Express : ",
+		"advert_body": "Experience graph database in a cloud environment for FREE!"
 	}
 }
