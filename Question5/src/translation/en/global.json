@@ -50,5 +50,31 @@
 		"btn_1": "CONTACT",
 		"btn_2": "BROCHURE",
 		"btn_3": "BLOG"
+	},
+	"features": {
+		"heading": "Key features",
+		"desc_1": "Manage your data with Agens Enterprise Package",
+		"desc_2": "Essential enterprise features such as high availability and sharding are provided"
+	},
+	"db_engine": {
+		"heading": "AgensSQL DB Engine",
+		"sub_heading": "Enhanced Data Security",
+		"desc_1": "AgensSQL is a PostgreSQL-based DBMS",
+		"desc_2": "that guarantees optimal security and stability.",
+		"card_1": {
+			"p1": "user password policy reinforces login security",
+			"p2":"excessive failed login attempts lock an account",
+			"p3":"define rules for password complexity"
+		},
+		"card_2": {
+			"p1": "enhanced data security of user personal information",
+			"p2":"resolve privacy issues in preparation for security audits",
+			"p3":"encryption or masking with unidentifiable special characters"
+		},
+		"card_3": {
+			"p1": "monitors database activities and collects data",
+			"p2":"traces object accessed or DDL & DML statements executed by a user",
+			"p3":"records all actions in logs"
+		}
 	}
 }
