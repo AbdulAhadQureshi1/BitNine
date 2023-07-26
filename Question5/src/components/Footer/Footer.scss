@@ -51,3 +51,25 @@
         transition: 0.3s ease;
     }
 }
+
+@media (max-width: 1024px) {
+    .footer {
+        display: none;
+    }
+    .copyright {
+        margin-left: 0px;
+        & > div {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .copyright {
+        font-size: 12px;
+        justify-content: flex-start;
+        padding-left: 40px;
+        padding-right: 0px;
+        width: 100%;
+    }
+}
