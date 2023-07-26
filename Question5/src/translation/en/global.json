@@ -38,5 +38,17 @@
 			"sub3":"IR 재무 정보"
 		},
 		"link8": "TRY FREE"
+	},
+	"hero" : {
+		"tagline": "An integration of Bitnine’s DB technology and PG expertise",
+		"desc_1_1": "AgensSQL is an all-new relational DBMS based on PostgreSQL, with years of expertise",
+		"desc_1_2" : " and knowledge accumulated through database research and development.",
+		"desc_2_1": "The enterprise package, along with AgensSQL engine, is an all-in-one solution that ensures",
+		"desc_2_2": " the efficiency and scalability of data management.",
+		"desc_3_1": "Get AgensSQL now for stable operation and management services at a reduced",
+		"desc_3_2": " maintenance cost.",
+		"btn_1": "CONTACT",
+		"btn_2": "BROCHURE",
+		"btn_3": "BLOG"
 	}
 }
