@@ -2,5 +2,41 @@
 	"header": {
 		"advert_heading": "AG Cloud Express : ",
 		"advert_body": "Experience graph database in a cloud environment for FREE!"
+	},
+	"navbar": {
+		"link1": {
+			"main": "PRODUCTS",
+			"sub1": {
+				"main": "Graph Database",
+				"sub1": "Agens Graph",
+				"sub2": "Apache AGE",
+				"sub3": "AG Cloud",
+				"sub4": "Visualization & Analytics"
+			},
+			"sub2": {
+				"main": "Relational Database",
+				"sub1": "AgensSQL"
+			}
+		},
+		"link2": "USE CASES",
+		"link3": "SERVICES",
+		"link4": {
+			"main":"RESOURCES",
+			"sub1":"Documentation",
+			"sub2":"Learn"
+		},
+		"link5": "BLOG",
+		"link6": {
+			"main":"COMPANY",
+			"sub1":"About us",
+			"sub2":"Contact"
+		},
+		"link7": {
+			"main": "IR",
+			"sub1": "IR 공고",
+			"sub2":"IR 공시 정보",
+			"sub3":"IR 재무 정보"
+		},
+		"link8": "TRY FREE"
 	}
 }

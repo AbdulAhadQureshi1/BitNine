@@ -1,0 +1,150 @@
+@import '../../utils/variables.scss';
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: 35px;
+
+    position: fixed;
+    margin-top: 44px;
+    
+    width: 100%;
+    height: 90px;
+
+    & > * {
+        font-family: $font;
+        font-size: 16px;
+    }
+
+    & > .links {
+        display: flex;
+
+        & > a {
+            padding-inline: 12.5px;
+            letter-spacing: 0.3px;
+            padding-block: 40px;
+            transition: 0.3s ease;
+            position: relative;
+        }
+        
+        & > a.active, & > a:hover, & > a.main:hover > span {
+            color: #fac433;
+            transition: 0.3s ease;
+        }
+
+        & > a.main > span {
+            background-color: #022ea9;
+            padding: 5.2px 10px;
+            color: white;
+            border-radius: 3px;
+        }
+
+        & > a > div {
+            display: none;
+            position: absolute;
+            top: 100%;
+            width: 230px;
+            font-size: 15px;
+            & :nth-child(1) >div {
+                top: 0%;
+            }
+            & :nth-child(2) > div {
+                top: 50%;
+            }
+            & > a > div {
+                display: none;
+                position: absolute;
+                width: 230px;
+                left: 100%;
+            }
+            & > a:hover > div {
+                display: flex;
+                flex-direction: column;
+            }
+            & > a, & > a > div > a {
+                padding: 5px 20px;
+                background-color: rgb(0,0,0,0.6);
+                color: white;
+                &:hover {
+                    background-color: rgb(0,0,0,0.8);
+                }
+            }
+        }
+
+        & > a:hover > div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    & > .hamburger {
+        display: none;
+        background: transparent;
+        border: none;
+        &:focus > svg > g > path {
+            stroke: #fac433;
+        }
+        & > svg {
+            width: 26px;
+            height: 26px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        & > .hamburger {
+            display: block;
+        }
+        & > .links {
+            display: none;
+        }
+        & > .links.active {
+            display: flex;
+            flex-direction: column;
+            z-index: 999;
+            width: 100%;
+            position: absolute;
+            top: 100%;
+
+            & > a {
+                padding: 5px 10px;
+                & > div {
+                    position: relative;
+                    z-index: 99999;
+                    width: 95%;
+                    & > a > div {
+                        position: static;
+                        padding: 0px;
+                        & >a {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        margin-top: 0px;
+        padding-inline: 15px;
+        & .logo {
+            width: 193.75px;
+            height: 50px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding-inline: 25px;
+        .logo {
+            width: 96.88px;
+            height: 25px;
+        }
+    }
+}
