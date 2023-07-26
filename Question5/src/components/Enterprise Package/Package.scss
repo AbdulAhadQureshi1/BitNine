@@ -25,7 +25,6 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    flex-wrap: wrap;    
     
     & :nth-child(1){
         & img {
@@ -55,5 +54,11 @@
             font-size: 20px;
             margin-bottom: 20px;
         }
+    }
+}
+
+@media(max-width: 900px) {
+    .content {
+        flex-wrap: wrap;
     }
 }
