@@ -76,5 +76,50 @@
 			"p2":"traces object accessed or DDL & DML statements executed by a user",
 			"p3":"records all actions in logs"
 		}
+	},
+	"package": {
+		"heading": "Agens Enterprise Package",
+		"desc_1":"Agens Enterprise Package comes with a high availability management server that",
+		"desc_2": "supports backup and data monitoring dashboard that helps enterprise customers manage their data efficiently.",
+		"sub_1": {
+			"main": "Agens HA Manager",
+			"desc_1_1": "HA Clustering ",
+			"desc_1_2": "- Failover/Failback, Load-balancing",
+			"desc_2": "Replication"
+		},
+		"sub_2": {
+			"main": "Agens Enterprise Manager",
+			"c_1": {
+				"main": "Backup/Restore",
+				"p_1": "provides a convenient interface for backup & restore",
+				"p_2": "provides backup & restore features for DB and table objects"
+			},
+			"c_2": {
+				"main": "DB Monitoring Dashboard",
+				"p_1": "monitors real-time session & transaction lock",
+				"p_2": "provides status for server CPU & memory"
+			},
+			"c_3": {
+				"main": "Schedule Management",
+				"p_1": "provides module for script, SQL job, and scheduling management",
+				"p_2": "provides UX dedicated to scheduling"
+			},
+			"c_4": {
+				"main": "Database Audit",
+				"p_1": "enables auditing via user interface",
+				"p_2": "view audit results via user interface"
+			},
+			"c_5": {
+				"main": "SQL Monitoring",
+				"p_1": "collects query statistics required for performance analysis",
+				"p_2": "extracts monitoring results in query"
+			},
+			"c_6": {
+				"main": "Performance Management",
+				"p_1": "monitors and collects operation status & statistical data",
+				"p_2": "provides status reports required for improving performance"
+			}
+			
+		}
 	}
 }
