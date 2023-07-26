@@ -121,5 +121,26 @@
 			}
 			
 		}
+	},
+	"footer": {
+		"link1": {
+			"main": "PRODUCTS",
+			"sub1": "Graph Database",
+			"sub2": "Relational Database",
+			"sub3": "Graph-based Solution"
+		},
+		"link2": "USE CASES",
+		"link3": "SERVICES",
+		"link4": {
+			"main":"RESOURCES",
+			"sub1":"Documentation",
+			"sub2":"Learn"
+		},
+		"link5": "BLOG",
+		"link6": {
+			"main":"COMPANY",
+			"sub1":"About us",
+			"sub2":"Contact"
+		}
 	}
 }

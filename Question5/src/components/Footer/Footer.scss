@@ -1,0 +1,53 @@
+@import '../../utils/variables.scss';
+
+.footer {
+    font-family: $font;
+    color: #ababab;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 150px;
+    padding-inline: 100px;
+
+
+    & > * > *, & > * {
+        font-size: 14.4px;
+    }
+    &  a:hover{
+        color: #2d6fad;
+        font-weight: 700;
+        transition: 0.3s ease;
+    }
+    & > div > h2, & > a {
+        transition: 0.3s ease;
+        font-weight: 700;
+    }
+    & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+    }
+}
+
+.copyright {
+    margin-top: 70px;
+    font-family: $font;
+    color: #ababab;
+    padding-inline: 205px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease;
+    font-size: 14.4px;
+    & > div {
+        display: flex;
+        align-items: center;
+    }
+    & a:hover {
+        font-weight: 700;
+        color: #2d6fad;
+        transition: 0.3s ease;
+    }
+}
