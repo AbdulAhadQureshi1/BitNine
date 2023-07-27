@@ -53,16 +53,37 @@ app.post("/register", async (req, res) => {
   if (!user) {
     userModel
       .create({
-        "email": email,
-        "password": hashedPass,
+        email: email,
+        password: hashedPass,
       })
       .then((user) => res.json(user))
       .catch((error) => res.json(error));
   } else {
     return res.status(400).json({
-      error: "Account already exists."
-    })
+      error: "Account already exists.",
+    });
   }
+});
+
+app.post("/login", async (req, res) => {
+  const { email, password } = req.body;
+  let user = await userModel.findOne({ email });
+  if (!user) {
+    return res.status(400).json({ error: "Account doesn't exist" });
+  }
+  bcrypt.compare(password, user.password,
+    async function (err, isMatch) {
+
+        // Comparing the original password to
+        // encrypted password
+        if (isMatch) {
+          return res.status(200).json({message: "Success!", user_data: user.email})
+        }
+        
+        if (!isMatch) {
+          return res.status(400).json({message: "Invalid Credentials."})
+        }
+    })
 });
 
 app.listen(3000, () => {
