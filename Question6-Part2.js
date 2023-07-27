@@ -12,3 +12,4 @@ function generateRandomArrayWithMissingNumber() {
   return numberList;
 }
 console.log(findMissingNumber(generateRandomArrayWithMissingNumber()));
+
